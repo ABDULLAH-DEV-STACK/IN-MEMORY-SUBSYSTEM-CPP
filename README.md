@@ -1,6 +1,6 @@
 <div align="center">
   
-# ⚙️ In-Memory Subsystem CPP
+# ⚙️ In-Memory Subsystem (C++)
   
 **A robust, zero-dependency console application demonstrating low-level memory management, strict state control, and modular system design in C/C++.**
 
@@ -18,6 +18,8 @@
 This project is a high-performance, console-based inventory management subsystem built entirely in C/C++. It was engineered from the ground up without relying on external database engines, Object-Relational Mappers (ORMs), or high-level standard library containers. 
 
 The primary objective of this project is to demonstrate core computer science competencies highly valued in **telecommunications, automotive software, and embedded systems engineering**. By manually handling data structures, memory allocation, and algorithmic routing, this application showcases a deep understanding of hardware-adjacent programming, deterministic execution, and system reliability.
+
+---
 
 ## 🚀 Enterprise Engineering Principles Applied
 
@@ -43,7 +45,14 @@ struct Book {
     int bookID;          // Unique Primary Key
     char title[100];     // Constrained String Buffer
     char author[100];    // Constrained String Buffer
-    ## 🛠️ System Operations
+    float price;         // Floating-point precision for currency
+    int quantity;        // Integer tracking for inventory
+};
+```
+
+---
+
+## 🛠️ System Operations
 
 | Operation | Complexity | Description |
 | :--- | :--- | :--- |
@@ -52,6 +61,9 @@ struct Book {
 | **Update** | `O(1)` | In-memory mutation of mutable fields (Price, Quantity) without full record reconstruction. |
 | **Delete** | `O(N)` | Contiguous deletion by shifting adjacent elements leftward to prevent memory gaps and null pointers. |
 | **Analytics** | `O(1)` | Real-time calculation of active indices to output system capacity and active volume. |
+
+---
+
 ## ⚙️ Technical Specifications
 
 | Component | Implementation Detail |
@@ -61,6 +73,9 @@ struct Book {
 | **Control Flow** | State Machine (`while` loop + command router) |
 | **Input Sanitization** | Standard input clearing to prevent cascading terminal failures |
 | **Display Engine** | Formatted tabular standard output (`printf`/`cout`) with strict alignment |
+
+---
+
 ## 💻 Installation & Compilation
 
 Designed for seamless compilation in any POSIX-compliant or Windows environment.
@@ -70,7 +85,7 @@ This project can be compiled directly from the terminal using standard GCC or Cl
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 
 # 2. Compile the source code (using C++11 standard)
@@ -78,7 +93,13 @@ g++ -std=c++11 main.cpp -o bookstore
 
 # 3. Run the application
 ./bookstore
-## Interface Preview
+```
+
+---
+
+## 🖥️ Interface Preview
+
+```text
 ===========================================
       IN-MEMORY SUBSYSTEM v1.0
 ===========================================
@@ -91,6 +112,10 @@ g++ -std=c++11 main.cpp -o bookstore
 [7] Terminate Session
 ===========================================
 SYS_PROMPT> Awaiting command...
+```
+
+---
+
 ## 🚀 Future Roadmap & CI/CD Readiness
 
 While this version focuses on raw memory and array manipulation, the modular nature of the code makes it primed for enterprise scaling:
@@ -103,11 +128,8 @@ While this version focuses on raw memory and array manipulation, the modular nat
 
 <div align="center">
 
-**Developed by Abdullah Khan **<br>
+**Developed by Abdullah Khan**<br>
 <br>
 <i>Built with a focus on writing clean, resource-efficient, and maintainable systems-level code.</i>
 
 </div>
-    float price;         // Floating-point precision for currency
-    int quantity;        // Integer tracking for inventory
-};
