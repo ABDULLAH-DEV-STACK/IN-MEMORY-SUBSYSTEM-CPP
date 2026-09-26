@@ -4,10 +4,10 @@
   
 **A robust, zero-dependency console application demonstrating low-level memory management, strict state control, and modular system design in C/C++.**
 
-[![Language](https://img.shields.io/badge/Language-C%2FC%2B%2B-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
-[![Architecture](https://img.shields.io/badge/Architecture-Monolithic_CLI-orange.svg)]()
-[![Memory](https://img.shields.io/badge/Memory-Contiguous_Array-success.svg)]()
-[![Environment](https://img.shields.io/badge/Environment-Linux%20%7C%20Windows-lightgrey.svg)]()
+[![Language](https://shields.io)](https://wikipedia.org)
+[![Architecture](https://shields.io)]()
+[![Memory](https://shields.io)]()
+[![Environment](https://shields.io)]()
 
 </div>
 
@@ -78,14 +78,29 @@ struct Book {
 
 ## 💻 Installation & Compilation
 
-Designed for seamless compilation in any POSIX-compliant or Windows environment.
+Designed for seamless compilation across both POSIX-compliant platforms and Windows developer workstations.
+
+### 🪟 For Windows Environments (PowerShell / VS Code Terminal)
+Ensure you have the `g++` compiler installed (via MinGW-w64 or MSYS2). Run the following commands inside your terminal:
+
+```powershell
+# 1. Clone the repository and navigate into the workspace
+git clone https://github.com
+cd your-repo-name
+
+# 2. Compile the native source code using the C++11 standard toolchain
+g++ -std=c++11 main.cpp -o bookstore
+
+# 3. Execute the binary artifact executable payload
+.\bookstore.exe
+```
 
 ### 🐧 For Linux / Bash Environments
 This project can be compiled directly from the terminal using standard GCC or Clang compilers. 
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
+# 1. Clone the repository and navigate into the workspace
+git clone https://github.com
 cd your-repo-name
 
 # 2. Compile the source code (using C++11 standard)
