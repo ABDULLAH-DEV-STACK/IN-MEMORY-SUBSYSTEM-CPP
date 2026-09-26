@@ -1,11 +1,14 @@
 <div align="center">
-  <h1>⚙️ In-Memory Subsystem (C++)</h1>
-  <p><strong>A robust, zero-dependency console application demonstrating low-level memory management, strict state control, and modular system design in C/C++.</strong></p>
   
-  <img src="https://shields.io" alt="Language">
-  <img src="https://shields.io" alt="Architecture">
-  <img src="https://shields.io" alt="Memory">
-  <img src="https://shields.io" alt="Environment">
+# ⚙️ In-Memory Subsystem (C++)
+  
+**A robust, zero-dependency console application demonstrating low-level memory management, strict state control, and modular system design in C/C++.**
+
+[![Language](https://img.shields.io/badge/Language-C%2FC%2B%2B-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Architecture](https://img.shields.io/badge/Architecture-Monolithic_CLI-orange.svg)]()
+[![Memory](https://img.shields.io/badge/Memory-Contiguous_Array-success.svg)]()
+[![Environment](https://img.shields.io/badge/Environment-Linux%20%7C%20Windows-lightgrey.svg)]()
+
 </div>
 
 ---
@@ -75,30 +78,15 @@ struct Book {
 
 ## 💻 Installation & Compilation
 
-Designed for seamless compilation across both POSIX-compliant platforms and Windows developer workstations.
-
-### 🪟 For Windows Environments (PowerShell / VS Code Terminal)
-Ensure you have the `g++` compiler installed (via MinGW-w64 or MSYS2). Run the following commands inside your terminal:
-
-```powershell
-# 1. Clone the repository and navigate into the workspace
-git clone https://github.com
-cd in-memory-subsystem-cpp
-
-# 2. Compile the native source code using the C++11 standard toolchain
-g++ -std=c++11 main.cpp -o bookstore
-
-# 3. Execute the binary artifact executable payload
-.\bookstore.exe
-```
+Designed for seamless compilation in any POSIX-compliant or Windows environment.
 
 ### 🐧 For Linux / Bash Environments
 This project can be compiled directly from the terminal using standard GCC or Clang compilers. 
 
 ```bash
-# 1. Clone the repository and navigate into the workspace
-git clone https://github.com
-cd in-memory-subsystem-cpp
+# 1. Clone the repository
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 
 # 2. Compile the source code (using C++11 standard)
 g++ -std=c++11 main.cpp -o bookstore
@@ -139,6 +127,9 @@ While this version focuses on raw memory and array manipulation, the modular nat
 ---
 
 <div align="center">
-  <p><strong>Developed by Abdullah Khan</strong></p>
-  <p><em>Built with a focus on writing clean, resource-efficient, and maintainable systems-level code.</em></p>
+
+**Developed by Abdullah Khan**<br>
+<br>
+<i>Built with a focus on writing clean, resource-efficient, and maintainable systems-level code.</i>
+
 </div>
